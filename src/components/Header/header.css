@@ -1,0 +1,17 @@
+.head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+.tab{
+    border: 5px solid black;
+    width: 15%;
+    height: 50%;
+
+}
