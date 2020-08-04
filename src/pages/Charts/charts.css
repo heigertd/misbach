@@ -1,0 +1,9 @@
+.category{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.search{
+    display: flex;
+    align-items: baseline;
+}
