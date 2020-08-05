@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Header from '../../components/Header/Header'
 import Card from '../../components/Card/Card'
 import './charts.css'
@@ -6,6 +6,10 @@ import './charts.css'
 
 export default function Charts() {
     const [popupState, setPopupState] = useState([]);
+
+    useEffect(()=>{
+        setPopupState('');
+    },[])
 
     function clickedMoreInfo(cardInfo){
         setPopupState(cardInfo);

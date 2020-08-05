@@ -8,8 +8,8 @@ function App() {
   return (
     <Router>
       <Route exact path = '/' component = {Home} />
-      <Route exact path = 'charts' component = {Charts} />
-      <Route exact path = 'about-contact' component = {AboutContact} />
+      <Route exact path = '/charts' component = {Charts} />
+      <Route exact path = '/about-contact' component = {AboutContact} />
     </Router>
   );
 }
