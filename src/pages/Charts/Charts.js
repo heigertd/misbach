@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react';
 import Header from '../../components/Header/Header'
 import Card from '../../components/Card/Card'
 import './charts.css'
-//FIXME: item number changes when filtered
 
 export default function Charts() {
     const [popupState, setPopupState] = useState([]);
@@ -13,19 +12,22 @@ export default function Charts() {
             product: 'Nine Generation Fan Frame Chart',
             description: 'This is the Nine generation fan chart',
             image: '/static/media/15genfold.d319ba04.jpg',
-            type: 'pedigree'
+            type: 'pedigree',
+            number: '0'
         },
         {
             product: '15 Generation folding chart',
             description: 'This is the 15 Gen chart',
             image: '/static/media/15genfold.d319ba04.jpg',
-            type:'descendant'
+            type:'descendant',
+            number: '1'
         },
         {
             product: 'PDF item',
             description: 'This is a PDF option',
             image: '/static/media/15genfold.d319ba04.jpg',
-            type: 'pdf'
+            type: 'pdf',
+            number: '2'
         },
     ])
 
@@ -40,9 +42,6 @@ export default function Charts() {
     useEffect(()=>{
         setFilteredItems(itemState)
     },[])
-
-
-
 
     function clickedMoreInfo(cardInfo){
         setPopupState(cardInfo);
@@ -66,6 +65,9 @@ export default function Charts() {
         const searchedList = copyOfItems.filter(item => item.type.includes('pdf'));
         setFilteredItems(searchedList)
     }
+    function filterSeeAll(){
+        setFilteredItems(itemState)
+    }
 
     return (
         <div>
@@ -75,15 +77,13 @@ export default function Charts() {
                 <button onClick={filterPedigree}>Pedigree</button>
                 <button onClick={filterDescendants}>Descendant</button>
                 <button onClick={filterPDF}>Free PDF</button>
-            </div>
-            <div>
-                <h1 id='pedigree'>Pedigree Charts</h1>
+                <button onClick={filterSeeAll}>See All</button>
             </div>
             <div className = 'category'>
             {filteredItemsState && filteredItemsState && 
                     <div>
                         {filteredItemsState.map(function filter(item, index){
-                            return <Card clickedMoreInfo = {clickedMoreInfo} item={index} text={filteredItemsState[index].description} />
+                            return <Card clickedMoreInfo = {clickedMoreInfo} item={filteredItemsState[index].number} text={filteredItemsState[index].description} />
                         })}
                     </div>
                 }    
@@ -91,10 +91,13 @@ export default function Charts() {
             
             {popupState && popupState && 
                 <div className='popup'>
+                    <button onClick = {closeMoreInfo}>Close</button>
+                    <div className='popup-card'>
                         <h1>{itemState[selectedItemState].product}</h1>
+                        <img src={itemState[selectedItemState].image} alt={itemState[selectedItemState].product}/>     
                         <p>{itemState[selectedItemState].description}</p>
-                        <img src={itemState[selectedItemState].image} alt={itemState[selectedItemState].product}/>
-                        <button onClick = {closeMoreInfo}>Close</button>     
+                        <a target='_blank' href='https://www.amazon.com/TreeSeek-Generation-Pedigree-Genealogy-Ancestry/dp/B0138VDW6G/ref=sr_1_1?camp=1789&creative=9325&dchild=1&keywords=B0138VDW6G&linkCode=xm2&linkId=295957fc366292bc077f6fea1a423a33&qid=1597184681&sr=8-1&tag=misbach'>View on Amazon</a>
+                    </div>        
                 </div>
             }
         </div>
