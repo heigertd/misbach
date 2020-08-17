@@ -1,3 +1,35 @@
+.about-page{
+    background-color: maroon;
+}
+
 .about{
-    display:flex;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin-left:15vw;
+    margin-right:15vw;
+    background-color: white;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    box-shadow: 5px 10px 5px #000000;
+}
+
+.image{
+    float:left;
+    margin-right: 0.5vw;
+
+}
+
+.grant-text{
+    padding-left: 5px;
+}
+
+p{
+    margin-top:0;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
