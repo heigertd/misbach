@@ -12,11 +12,11 @@
     justify-content: flex-end;
 }
 
-.nav-bar2{
+.dropdown-nav{
     display: flex;
-    /* width: 50%; */
-    justify-content: flex-end;
-    height:100%;
+    height: 15vh;
+    width:100%;
+    justify-content: center;
 }
 
 .tab{
@@ -46,11 +46,18 @@
      
 }
 
-.dropdown-menu{
-    width:100%;
-    z-index: 200;
-    background-color: lawngreen;
-    position: absolute;
+.dropdown-button-close{
+    border: 2px solid black;
+    border-radius: 20%;
+    background:maroon;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center; 
+     
 }
 
 a:link, a:visited{
