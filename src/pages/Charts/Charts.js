@@ -3,6 +3,8 @@ import Header from '../../components/Header/Header'
 import Card from '../../components/Card/Card'
 import './charts.css'
 
+//TODO: get right images, view height issue
+
 export default function Charts() {
     const [popupState, setPopupState] = useState([]);
     const [selectedItemState, setSelectedItemState] = useState(['0']);
@@ -20,7 +22,8 @@ export default function Charts() {
             description: 'This is the 15 Gen chart',
             image: '/static/media/15genfold.d319ba04.jpg',
             type:'descendant',
-            number: '1'
+            number: '1',
+            amazon:'https://www.amazon.com/TreeSeek-Generation-Pedigree-Genealogy-Ancestry/dp/B0138VDW6G/ref=sr_1_1?camp=1789&creative=9325&dchild=1&keywords=B0138VDW6G&linkCode=xm2&linkId=295957fc366292bc077f6fea1a423a33&qid=1597184681&sr=8-1&tag=misbach'
         },
         {
             product: 'PDF item',
@@ -33,14 +36,8 @@ export default function Charts() {
 
     useEffect(()=>{
         setPopupState('');
-    },[])
-
-    useEffect(()=>{
+        setFilteredItems(itemState);
         setSelectedItemState('');
-    },[])
-
-    useEffect(()=>{
-        setFilteredItems(itemState)
     },[])
 
     function clickedMoreInfo(cardInfo){
@@ -70,23 +67,25 @@ export default function Charts() {
     }
 
     return (
-        <div>
+        <div className='chart-page'>
             <Header />
-            <div className='search'>
-                <p>View:</p>
-                <button onClick={filterPedigree}>Pedigree</button>
-                <button onClick={filterDescendants}>Descendant</button>
-                <button onClick={filterPDF}>Free PDF</button>
-                <button onClick={filterSeeAll}>See All</button>
-            </div>
-            <div className = 'category'>
-            {filteredItemsState && filteredItemsState && 
-                    <div>
-                        {filteredItemsState.map(function filter(item, index){
-                            return <Card clickedMoreInfo = {clickedMoreInfo} item={filteredItemsState[index].number} text={filteredItemsState[index].description} />
-                        })}
-                    </div>
-                }    
+            <div className='chart'>
+                <div className='search'>
+                    <p>View:</p>
+                    <button className='search-tab' onClick={filterPedigree}>Pedigree</button>
+                    <button className='search-tab' onClick={filterDescendants}>Descendant</button>
+                    <button className='search-tab' onClick={filterPDF}>Free PDF</button>
+                    <button className='search-tab' onClick={filterSeeAll}>See All</button>
+                </div>
+                <div>
+                    {filteredItemsState && filteredItemsState && 
+                        <div className = 'category'>
+                            {filteredItemsState.map(function filter(item, index){
+                                return <Card clickedMoreInfo = {clickedMoreInfo} item={filteredItemsState[index].number} text={filteredItemsState[index].product} image={filteredItemsState[index].image} />
+                            })}
+                        </div>
+                    }    
+                </div>
             </div>
             
             {popupState && popupState && 
@@ -96,7 +95,7 @@ export default function Charts() {
                         <h1>{itemState[selectedItemState].product}</h1>
                         <img src={itemState[selectedItemState].image} alt={itemState[selectedItemState].product}/>     
                         <p>{itemState[selectedItemState].description}</p>
-                        <a target='_blank' href='https://www.amazon.com/TreeSeek-Generation-Pedigree-Genealogy-Ancestry/dp/B0138VDW6G/ref=sr_1_1?camp=1789&creative=9325&dchild=1&keywords=B0138VDW6G&linkCode=xm2&linkId=295957fc366292bc077f6fea1a423a33&qid=1597184681&sr=8-1&tag=misbach'>View on Amazon</a>
+                        <a target='_blank' href={itemState[selectedItemState].amazon}>View on Amazon</a>
                     </div>        
                 </div>
             }

@@ -10,10 +10,10 @@ export default function Card(props) {
     }
 
     return (
-        <div>
+        <div className='big-card'>
             <div className = 'card'>
-                <img src={props.image} alt= 'nine generation fan frame chart'/>
-                <p>{props.text}</p>
+                <img className='card-image' src={props.image} alt= 'nine generation fan frame chart'/>
+                <p className='card-text'>{props.text}</p>
                 <button onClick={clickedMoreInfoReturn}>More Info</button>
             </div>
         </div>
