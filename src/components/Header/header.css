@@ -3,29 +3,54 @@
     justify-content: space-around;
     background-color: white;
     border-bottom: 5px solid black;
+    width:100%;
 }
 
 .nav-bar{
     display: flex;
     width: 50%;
     justify-content: flex-end;
-    
+}
+
+.nav-bar2{
+    display: flex;
+    /* width: 50%; */
+    justify-content: flex-end;
+    height:100%;
 }
 
 .tab{
     border: 2px solid black;
     border-radius: 6%;
     box-shadow: 1px 2px 2px #000000;
+    background-color: rgb(221, 221, 221);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
     width: 15%;
     height: 50%;
     margin-right: 1vw;
     display: flex;
     align-self: center;
     align-items: center;
-    justify-content: center;
-    /* background-color: rgb(231, 196, 149); */
-    background-color: rgb(221, 221, 221);
+    justify-content: center; 
+}
+
+.dropdown-button{
+    display: none;
+    border: 2px solid black;
+    border-radius: 20%;
+    background:maroon;
+    color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 50%;   
+     
+}
+
+.dropdown-menu{
+    width:100%;
+    z-index: 200;
+    background-color: lawngreen;
+    position: absolute;
 }
 
 a:link, a:visited{
@@ -35,4 +60,18 @@ a:link, a:visited{
 
 a:hover{
     text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 650px){
+   .nav-bar{
+       display:none;
+    }
+
+   .dropdown-button{
+        display: flex;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+    }
 }
