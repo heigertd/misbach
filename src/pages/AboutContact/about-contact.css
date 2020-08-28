@@ -1,5 +1,6 @@
 .about-page{
     background-color: maroon;
+    width:100vw;
 }
 
 .about{
@@ -38,5 +39,6 @@ h1{
     .about{
         width:100vw;
         margin:0;
+        padding: 0vw;
     }
 }

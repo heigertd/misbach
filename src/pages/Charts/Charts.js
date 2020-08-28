@@ -77,25 +77,25 @@ export default function Charts() {
                     <button className='search-tab' onClick={filterPDF}>Free PDF</button>
                     <button className='search-tab' onClick={filterSeeAll}>See All</button>
                 </div>
-                <div>
-                    {filteredItemsState && filteredItemsState && 
-                        <div className = 'category'>
-                            {filteredItemsState.map(function filter(item, index){
-                                return <Card clickedMoreInfo = {clickedMoreInfo} item={filteredItemsState[index].number} text={filteredItemsState[index].product} image={filteredItemsState[index].image} />
-                            })}
-                        </div>
-                    }    
-                </div>
+                {filteredItemsState && filteredItemsState && 
+                    <div className = 'category'>
+                        
+                    {filteredItemsState.map(function filter(item, index){
+                        return <Card clickedMoreInfo = {clickedMoreInfo} item={filteredItemsState[index].number} text={filteredItemsState[index].product} image={filteredItemsState[index].image} />
+                    })}
+                        
+                    </div>
+                }    
             </div>
             
             {popupState && popupState && 
                 <div className='popup'>
-                    <button onClick = {closeMoreInfo}>Close</button>
                     <div className='popup-card'>
                         <h1>{itemState[selectedItemState].product}</h1>
-                        <img src={itemState[selectedItemState].image} alt={itemState[selectedItemState].product}/>     
+                        <img className='popup-pic' src={itemState[selectedItemState].image} alt={itemState[selectedItemState].product}/>     
                         <p>{itemState[selectedItemState].description}</p>
                         <a target='_blank' href={itemState[selectedItemState].amazon}>View on Amazon</a>
+                        <button onClick = {closeMoreInfo}>Close</button>
                     </div>        
                 </div>
             }
