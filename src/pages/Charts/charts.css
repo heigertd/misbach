@@ -1,6 +1,6 @@
 .chart-page{
     background-color: maroon;
-    /* height:100vh; */
+    height:100vh;
     /* overflow-y: hidden; */
 }
 
@@ -96,3 +96,5 @@ button:hover{
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
+
+  @import '../../../node_modules/sal.js/dist/sal.css';

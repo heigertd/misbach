@@ -1,9 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import Header from '../../components/Header/Header'
 import Card from '../../components/Card/Card'
+import sal from 'sal.js'
 import './charts.css'
 
-//TODO: get right images, view height issue
+//TODO: get right images
 
 export default function Charts() {
     const [popupState, setPopupState] = useState([]);
@@ -33,6 +34,14 @@ export default function Charts() {
             number: '2'
         },
     ])
+
+    useEffect(() => {
+        sal({
+            threshold: .25,
+            once: false,
+        
+        });
+    }, [])
 
     useEffect(()=>{
         setPopupState('');
