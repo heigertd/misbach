@@ -19,21 +19,25 @@ export default function Home() {
     }, [])
 
     return (
-        <div>
-            <div className='top-third'></div>
-            <div  className='image-home'>
-                <img src={logo} />
+        <div className = 'main-home'>
+            <div className = 'logo-image'>
+                <p>VVVV</p>
             </div>
-            <div className='links'>
-                <HomeCard  image={slide1} text='Search through out various charts, including pedigree charts, descendant charts and even free pdfs' location='/charts' name='Charts' />
-                <div className='home-big-card'>
-                    <img className='home-card-image' src={grant} alt= 'nine generation fan frame chart'/>
-                    <div className='home-card-text-div'>
-                        <p className='home-card-text'>Learn about how we started and how to get in contact with us</p>
-                        <a href='/about-contact' className = 'home-tab'>About</a> 
-                    </div>
-                </div>
+            <div className = 'text'>
+                <h1>World Famous Genealogy Charts</h1>
+                <p>We make great charts, that make great gifts. For over 50 years we've been providing the world's best genealogy charts. At least that's what we keep hearing from our customers. Thank you for your business over the years</p>
             </div>
+            <div className = 'charts-image'></div>
+            <div className = 'text'>
+                <h1>Charts</h1>
+                <p>We have a variety of pedigree and descendant charts, even some free PDFs</p>
+            </div>
+            <div className = 'about-image'></div>
+            <div className = 'text'>
+                <h1>About</h1>
+                <p>Learn more about how we started and what we do</p>
+            </div>
+            <div className = 'logo-image'></div>
         </div>
     )
 }

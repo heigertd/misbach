@@ -1,4 +1,75 @@
-.home-page{
+/* @import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Nova+Mono&display=swap');
+
+h1, p{
+    margin: 0; 
+}
+
+h1{
+    /* font-family: 'Nova Mono', monospace; */
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.main-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-image{
+    background-image: url(../../images/logo.png);
+    height: 100vh;
+    width: 100%;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: rgba(0, 38, 255, 0.726);
+    height: 25vh;
+    width: 100%;
+    font-size: smaller;
+    text-align: center;
+    /* color: white; */
+    margin: 0;
+}
+
+.charts-image{
+    background-image: url(../../images/slide1.png);
+    background-color: rgb(255, 255, 255);
+    height: 50vh;
+    width: 100%;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.about-image{
+    background-image: url(../../images/grantmisbach.jpg);
+    background-color: rgb(255, 255, 255);
+    height: 70vh;
+    width: 100%;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+/* .home-page{
     background-color: maroon;
 }
 
@@ -20,13 +91,10 @@
     height:auto;
 }
 
-/* new page format */
-
 .top-third{
     background:maroon;
     height: 45vh;
     width:100vw;
-    /* position: relative; */
 }
 
 .links{
@@ -48,13 +116,11 @@
     background:white;
 }
 
-/* seperate card format */
+
 .card{   
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin-left: 1vw; */
-    /* width: 90%; */
 }
 
 .home-tab{
@@ -90,13 +156,10 @@
 }
 
 .home-card-text{
-    /* width:90%; */
     text-align: center;
 }
 
 .home-card-image{
-    /* width:90%; */
-    /* width:100%; */
     height:100%;
 }
 
@@ -105,4 +168,4 @@
     .home-big-card{
         width:100%;
     }
-}
+} */
