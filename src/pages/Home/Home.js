@@ -24,8 +24,8 @@ export default function Home() {
                 <p>VVVV</p>
             </div>
             <div className = 'text'>
-                <h1>World Famous Genealogy Charts</h1>
-                <p>We make great charts, that make great gifts. For over 50 years we've been providing the world's best genealogy charts. At least that's what we keep hearing from our customers. Thank you for your business over the years</p>
+                <h1 className = 'title'>World Famous Genealogy Charts</h1>
+                <p className = 'title'>We make great charts, that make great gifts. For over 50 years we've been providing the world's best genealogy charts. At least that's what we keep hearing from our customers. Thank you for your business over the years</p>
             </div>
             <div className = 'charts-image'></div>
             <div className = 'text'>
