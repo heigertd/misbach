@@ -61,7 +61,7 @@ h1, p{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    /* background: rgba(0, 38, 255, 0.726); */
+    /* background: rgba(63, 122, 140); */
     height: 40vh;
     width: 100%;
     font-size: smaller;
@@ -102,7 +102,7 @@ h1, p{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: contain;
 
     display: flex;
     align-items: flex-end;
