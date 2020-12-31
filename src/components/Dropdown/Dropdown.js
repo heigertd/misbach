@@ -15,10 +15,10 @@ export default function Dropdown(props) {
     }
 
     return (
-        <div>
+        <div id = 'chart'>
             <div className = 'dropdown'>
                 <h3>{props.title}</h3>
-                <button onClick={changeState}>Click here</button>
+                <button onClick={changeState}><a href = '#chart'>Click Here</a></button>
             </div>
             <div className = {dropdownState === 'set' ? 'dropdown-content seen' : 'dropdown-content hidden'}>
                 <Charts />
