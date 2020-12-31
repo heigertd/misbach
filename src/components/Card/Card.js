@@ -4,17 +4,15 @@ import genFold from '../../images/15genfold.jpg'
 
 export default function Card(props) {
 
-    function clickedMoreInfoReturn(){
-        var chosenInfo = 'clicked'
-        props.clickedMoreInfo(chosenInfo)
-    }
 
     return (
-        <div className='big-card'>
-            <div className = 'card'>
-                <img className='card-image' src={props.image} alt= 'nine generation fan frame chart'/>
+        <div className = 'card'>
+            <div className = 'card-title'>
                 <p className='card-text'>{props.text}</p>
-                <button onClick={clickedMoreInfoReturn}>More Info</button>
+                <img className='card-image' src={props.image} alt= 'nine generation fan frame chart'/>
+            </div>
+            <div className = 'card-content'> 
+                <p className='card-text'>{props.text}</p>
             </div>
         </div>
     )

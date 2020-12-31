@@ -33,6 +33,50 @@ export default function Charts() {
             type: 'pdf',
             number: '2'
         },
+        {
+            product: 'Nine Generation Fan Frame Chart',
+            description: 'This is the Nine generation fan chart',
+            image: '/static/media/15genfold.d319ba04.jpg',
+            type: 'pedigree',
+            number: '0'
+        },
+        {
+            product: '15 Generation folding chart',
+            description: 'This is the 15 Gen chart',
+            image: '/static/media/15genfold.d319ba04.jpg',
+            type:'descendant',
+            number: '1',
+            amazon:'https://www.amazon.com/TreeSeek-Generation-Pedigree-Genealogy-Ancestry/dp/B0138VDW6G/ref=sr_1_1?camp=1789&creative=9325&dchild=1&keywords=B0138VDW6G&linkCode=xm2&linkId=295957fc366292bc077f6fea1a423a33&qid=1597184681&sr=8-1&tag=misbach'
+        },
+        {
+            product: 'PDF item',
+            description: 'This is a PDF option',
+            image: '/static/media/15genfold.d319ba04.jpg',
+            type: 'pdf',
+            number: '2'
+        },
+        {
+            product: 'Nine Generation Fan Frame Chart',
+            description: 'This is the Nine generation fan chart',
+            image: '/static/media/15genfold.d319ba04.jpg',
+            type: 'pedigree',
+            number: '0'
+        },
+        {
+            product: '15 Generation folding chart',
+            description: 'This is the 15 Gen chart',
+            image: '/static/media/15genfold.d319ba04.jpg',
+            type:'descendant',
+            number: '1',
+            amazon:'https://www.amazon.com/TreeSeek-Generation-Pedigree-Genealogy-Ancestry/dp/B0138VDW6G/ref=sr_1_1?camp=1789&creative=9325&dchild=1&keywords=B0138VDW6G&linkCode=xm2&linkId=295957fc366292bc077f6fea1a423a33&qid=1597184681&sr=8-1&tag=misbach'
+        },
+        {
+            product: 'PDF item',
+            description: 'This is a PDF option',
+            image: '/static/media/15genfold.d319ba04.jpg',
+            type: 'pdf',
+            number: '2'
+        },
     ])
 
     useEffect(() => {
@@ -77,8 +121,7 @@ export default function Charts() {
 
     return (
         <div className='chart-page'>
-            <Header />
-            <div className='chart'>
+            {/* <div className='chart'> */}
                 <div className='search'>
                     <p>View:</p>
                     <button className='search-tab' onClick={filterPedigree}>Pedigree</button>
@@ -95,19 +138,9 @@ export default function Charts() {
                         
                     </div>
                 }    
-            </div>
+            {/* </div> */}
             
-            {popupState && popupState && 
-                <div className='popup'>
-                    <div className='popup-card'>
-                        <h1>{itemState[selectedItemState].product}</h1>
-                        <img className='popup-pic' src={itemState[selectedItemState].image} alt={itemState[selectedItemState].product}/>     
-                        <p>{itemState[selectedItemState].description}</p>
-                        <a target='_blank' href={itemState[selectedItemState].amazon}>View on Amazon</a>
-                        <button onClick = {closeMoreInfo}>Close</button>
-                    </div>        
-                </div>
-            }
+            
         </div>
     )
 }

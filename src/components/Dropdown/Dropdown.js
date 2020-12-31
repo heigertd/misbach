@@ -1,4 +1,5 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react';
+import Charts from '../../pages/Charts/Charts'
 import './dropdown.css'
 
 export default function Dropdown(props) {
@@ -20,9 +21,8 @@ export default function Dropdown(props) {
                 <button onClick={changeState}>Click here</button>
             </div>
             <div className = {dropdownState === 'set' ? 'dropdown-content seen' : 'dropdown-content hidden'}>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse reiciendis laborum similique expedita necessitatibus totam est! Iusto ipsam, ipsa quo autem placeat ducimus dolorum facere quaerat deleniti vel velit necessitatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse reiciendis laborum similique expedita necessitatibus totam est! Iusto ipsam, ipsa quo autem placeat ducimus dolorum facere quaerat deleniti vel velit necessitatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse reiciendis laborum similique expedita necessitatibus totam est! Iusto ipsam, ipsa quo autem placeat ducimus dolorum facere quaerat deleniti vel velit necessitatibus?</p>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse reiciendis laborum similique expedita necessitatibus totam est! Iusto ipsam, ipsa quo autem placeat ducimus dolorum facere quaerat deleniti vel velit necessitatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse reiciendis laborum similique expedita necessitatibus totam est! Iusto ipsam, ipsa quo autem placeat ducimus dolorum facere quaerat deleniti vel velit necessitatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse reiciendis laborum similique expedita necessitatibus totam est! Iusto ipsam, ipsa quo autem placeat ducimus dolorum facere quaerat deleniti vel velit necessitatibus?</p>
+                <Charts />
+                
             </div>
         </div>
 
