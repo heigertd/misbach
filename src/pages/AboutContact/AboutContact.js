@@ -6,9 +6,7 @@ import './about-contact.css'
 export default function AboutContact() {
     return (
         <div className="about-page">
-            <Header />
             <div className='about'>
-                <h1>About Us</h1>
                 <div className='grant'>
                     <div className='image'>
                         <img src={Grant} alt='Grant Misbach' />

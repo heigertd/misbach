@@ -27,8 +27,8 @@ export default function Home() {
             </div>
         </div>
         <div class = 'content'>
-            <Dropdown title = 'Charts' />
-            <Dropdown title = 'About' />
+            <Dropdown title = 'Charts' content = 'charts' />
+            <Dropdown title = 'About' content = 'about' />
             
         </div>
     </div>
