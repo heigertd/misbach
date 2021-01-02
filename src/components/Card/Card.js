@@ -12,7 +12,7 @@ export default function Card(props) {
                 <img className='card-image' src={props.image} alt= 'nine generation fan frame chart'/>
             </div>
             <div className = 'card-content'> 
-                <p className='card-text'>{props.text}</p>
+                <p className='card-text'>{props.description}</p>
             </div>
         </div>
     )

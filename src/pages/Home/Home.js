@@ -26,7 +26,7 @@ export default function Home() {
                 <img src="https://img.icons8.com/ios-filled/50/000000/expand-arrow--v1.png"/>
             </div>
         </div>
-        <div class = 'content'>
+        <div class = 'home-content'>
             <Dropdown title = 'Charts' content = 'charts' />
             <Dropdown title = 'About' content = 'about' />
             

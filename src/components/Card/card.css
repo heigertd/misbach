@@ -1,18 +1,24 @@
 .card{
     border: 2px solid rgb(201, 199, 199);
+    border-radius: 5px 20px 20px 5px;
+    background-color: white;
     display: flex;
-    /* flex-direction: column; */
-    /* justify-content: center; */
+    justify-content: space-between;
     margin-bottom: 5px;
-    /* height: 25%; */
     width: 75%;
+}
+
+.card-title{
+    border-right: 2px solid rgb(201, 199, 199);
+    width: 20%;
+    padding: 1vw;
 }
 
 .card-content{
     display: flex;
     align-items: center;
+    width: 80%;
+    padding: 0 2vw;
 }
 
-.card-text{
-    width:90%;
-}
+

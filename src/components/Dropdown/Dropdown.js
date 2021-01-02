@@ -24,8 +24,13 @@ export default function Dropdown(props) {
         <div id = 'chart'>
             <div className = 'dropdown'>
                 <h3>{props.title}</h3>
-                <button onClick={changeState}><a href = '#chart'>Click Here</a></button>
+                <button className = 'button' onClick={changeState}>
+                    <a href = '#chart'>
+                        <img className = {dropdownState === 'set' ? 'rotate-arrow' : ''} src="https://img.icons8.com/ios-filled/25/000000/expand-arrow--v1.png"/>
+                    </a>
+                </button>
             </div>
+            
             <div className = {dropdownState === 'set' ? 'dropdown-content seen' : 'dropdown-content hidden'}>
                 {dropdownContentState === 'charts' &&
                     <Charts />

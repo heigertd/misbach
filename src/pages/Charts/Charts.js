@@ -13,7 +13,7 @@ export default function Charts() {
     const [itemState, setItemState] = useState([
         {
             product: 'Nine Generation Fan Frame Chart',
-            description: 'This is the Nine generation fan chart',
+            description: 'One of our more popular charts. This chart has passed the test of time. Created over 50 years ago, and still selling strong. The back of the chart contains extra space to go up to a total of 20 generations or more. It also has the ability to fold down to fit in a 3 ring binder. See all your ancestral lines at once. The most popular selling jumbo pedigree chart ever! Size 25inches by 27inches We recommend you buy two charts and place them side by side so you can see all 15 generations without turning the chart over. This chart is shipped folded in a flat mailer.',
             image: '/static/media/15genfold.d319ba04.jpg',
             type: 'pedigree',
             number: '0'
@@ -133,7 +133,7 @@ export default function Charts() {
                     <div className = 'category'>
                         
                     {filteredItemsState.map(function filter(item, index){
-                        return <Card clickedMoreInfo = {clickedMoreInfo} item={filteredItemsState[index].number} text={filteredItemsState[index].product} image={filteredItemsState[index].image} />
+                        return <Card clickedMoreInfo = {clickedMoreInfo} item={filteredItemsState[index].number} text={filteredItemsState[index].product} image={filteredItemsState[index].image} description = {filteredItemsState[index].description} />
                     })}
                         
                     </div>

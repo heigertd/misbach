@@ -24,7 +24,11 @@ body{
 
 .arrow{
     width: 100%;
-    background-image: linear-gradient(white, rgba(158, 171, 199, 0.9));
+    /* background-image: linear-gradient(white, rgba(158, 171, 199, 0.9)); */
+    backdrop-filter: blur(10px);
+    border: solid 2px transparent;
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
     text-align: center;
 }
 
@@ -42,15 +46,16 @@ body{
     transform: translateZ(-1px)scale(2);
 }
 
-.content{
+.home-content{
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 99vw;
     height: 100vh;
     /* padding-top: 20vh; */
     /* background-image: url('./images/th.jpg'); */
     position: relative;
     z-index: 2;
+    background-color: rgb(216, 222, 233);
 }
 
 

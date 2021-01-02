@@ -1,15 +1,31 @@
 .dropdown{
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    background-color: white;
+    padding: 0 2vw;
+    width: 97%;
     /* height: 200px; */
-    border-top: 5px solid black;
-    border-bottom: 5px solid black;
+    /* border-top: 2px solid rgb(168, 158, 99); */
+    /* border-bottom: 2px solid rgb(168, 158, 99); */
+    margin-bottom: 1px;
 }
 
 .dropdown-content{
     transition: max-height 0.5s linear;
     overflow: scroll;
+}
+
+.button{
+    background-color: white;
+    border: none;
+}
+
+.button:hover{
+    background-color: rgb(247, 247, 247);
+}
+
+.rotate-arrow{
+    transform: rotate(180deg);
 }
 
 .seen{
