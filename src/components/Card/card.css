@@ -21,4 +21,38 @@
     padding: 0 2vw;
 }
 
+.card-image{
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+    .card{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        border-radius: 5px 5px 20px 20px;
+        width: 95%;
+    }
+
+    .card-title{
+        border-right: none;
+        text-align: center;
+        /* align-content: center; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        width: 100%;
+        
+    }
+
+    .card-content{
+        display: flex;
+        /* align-items: center; */
+        width: 90%;
+        padding: 0 2vw;
+        text-align: center;
+    }
+  }
+
 

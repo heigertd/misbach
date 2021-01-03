@@ -92,14 +92,7 @@ export default function Charts() {
         setFilteredItems(itemState);
         setSelectedItemState('');
     },[])
-
-    function clickedMoreInfo(cardInfo){
-        setPopupState(cardInfo);
-        setSelectedItemState(this.item)
-    }
-    function closeMoreInfo(){
-        setPopupState('');
-    }
+    
     function filterPedigree(){
         const copyOfItems = [...itemState];
         const searchedList = copyOfItems.filter(item => item.type.includes('pedigree'));
@@ -121,24 +114,24 @@ export default function Charts() {
 
     return (
         <div className='chart-page'>
-            {/* <div className='chart'> */}
+            
                 <div className='search'>
                     <p>View:</p>
+                    <button className='search-tab' onClick={filterSeeAll}>All</button>
                     <button className='search-tab' onClick={filterPedigree}>Pedigree</button>
                     <button className='search-tab' onClick={filterDescendants}>Descendant</button>
                     <button className='search-tab' onClick={filterPDF}>Free PDF</button>
-                    <button className='search-tab' onClick={filterSeeAll}>See All</button>
                 </div>
                 {filteredItemsState && filteredItemsState && 
                     <div className = 'category'>
                         
                     {filteredItemsState.map(function filter(item, index){
-                        return <Card clickedMoreInfo = {clickedMoreInfo} item={filteredItemsState[index].number} text={filteredItemsState[index].product} image={filteredItemsState[index].image} description = {filteredItemsState[index].description} />
+                        return <Card item={filteredItemsState[index].number} text={filteredItemsState[index].product} image={filteredItemsState[index].image} description = {filteredItemsState[index].description} />
                     })}
                         
                     </div>
                 }    
-            {/* </div> */}
+            
             
             
         </div>
