@@ -49,14 +49,34 @@ body{
 .home-content{
     display: flex;
     flex-direction: column;
-    width: 99vw;
-    height: 100vh;
+    width: 100vw;
+    min-height: 100vh;
     /* padding-top: 20vh; */
     /* background-image: url('./images/th.jpg'); */
     position: relative;
     z-index: 2;
     background-color: rgb(216, 222, 233);
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 
 
 /* .content{

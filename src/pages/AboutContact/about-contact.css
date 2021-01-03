@@ -1,6 +1,7 @@
 .about-page{
-    background-color: maroon;
+    /* background-color: maroon; */
     width:100vw;
+    
 }
 
 .about{
@@ -12,7 +13,9 @@
     background-color: white;
     padding-left: 1vw;
     padding-right: 1vw;
+    padding-top: 2vh;
     box-shadow: 5px 10px 5px #000000;
+    
 }
 
 .image{
