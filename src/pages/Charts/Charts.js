@@ -7,8 +7,6 @@ import './charts.css'
 //TODO: get right images
 
 export default function Charts() {
-    const [popupState, setPopupState] = useState([]);
-    const [selectedItemState, setSelectedItemState] = useState(['0']);
     const [filteredItemsState, setFilteredItems] = useState([]);
     const [itemState, setItemState] = useState([
         {
@@ -88,9 +86,7 @@ export default function Charts() {
     }, [])
 
     useEffect(()=>{
-        setPopupState('');
         setFilteredItems(itemState);
-        setSelectedItemState('');
     },[])
     
     function filterPedigree(){

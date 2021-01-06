@@ -4,7 +4,6 @@ import Charts from '../../pages/Charts/Charts'
 import './dropdown.css'
 
 export default function Dropdown(props) {
-
     const [dropdownState, setDropdownState] = useState([]);
     const [dropdownContentState, setDropdownContentState] = useState([]);
 

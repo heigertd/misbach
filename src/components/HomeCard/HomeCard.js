@@ -1,12 +1,16 @@
 import React from 'react'
 import './HomeCard.css'
 
-export default function HomeCard(props) {
+export default function HomeCard() {
     return (
-        <div className='home-card-big-card'>
-                <img className='home-card-card-image' src={props.image} alt= 'nine generation fan frame chart'/>
-                <p className='home-card-card-text'>{props.text}</p>
-                <a href={props.location} className = 'home-tab'>{props.name}</a> 
+        <div className = 'homecard-div'>
+            <div className = 'home-image'></div>
+            <div className = 'home-text-div'>
+                <div className = 'home-text-text'>
+                    <h1>World Famous Genealogy Charts</h1>
+                    <h3>We make great charts, that make great gifts. For over 50 years we've been providing the world's best genealogy charts. At least that's what we keep hearing from our customers. Thank you for your business over the years.</h3>
+                </div>
+            </div>
         </div>
     )
 }

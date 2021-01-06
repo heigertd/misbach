@@ -1,14 +1,15 @@
 .dropdown{
     display: flex;
     justify-content: space-between;
-    background-color: white;
+    /* background-color: white; */
+    background-color: rgb(216, 222, 233);
     padding: 0 2vw;
-    width: 97%;
+    width: 95.5vw;
     /* height: 200px; */
-    /* border-top: 2px solid rgb(168, 158, 99); */
+    /* border: 2px solid rgb(62, 98, 121); */
     /* border-bottom: 2px solid rgb(168, 158, 99); */
-    /* border-radius: 20px 10px 10px 20px; */
-    margin-bottom: 1px;
+    /* border-radius: 0px 0px 20px 20px; */
+    /* margin-bottom: 1px; */
 }
 
 .dropdown-content{
@@ -18,7 +19,7 @@
 }
 
 .button{
-    background-color: white;
+    background-color: rgb(216, 222, 233);
     border: none;
 }
 
