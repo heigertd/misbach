@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-import Header from '../../components/Header/Header'
 import Card from '../../components/Card/Card'
 import sal from 'sal.js'
 import './charts.css'
@@ -76,7 +75,10 @@ export default function Charts() {
             number: '2'
         },
     ])
+    const [dropdownState, setDropdownState] = useState([]);
+    
 
+    
     useEffect(() => {
         sal({
             threshold: .25,
@@ -88,6 +90,14 @@ export default function Charts() {
     useEffect(()=>{
         setFilteredItems(itemState);
     },[])
+
+    function changeState(){
+        if(dropdownState === 'set'){
+            setDropdownState('')
+        }else{
+            setDropdownState('set')
+        }
+    }
     
     function filterPedigree(){
         const copyOfItems = [...itemState];
@@ -110,14 +120,23 @@ export default function Charts() {
 
     return (
         <div className='chart-page'>
-            
+
+            <div className = 'search-dropdown'>
                 <div className='search'>
-                    <p>View:</p>
+                    <p>Filter</p>
+                    <button className = 'button' onClick={changeState}>
+                        <a>
+                            <img className = {dropdownState === 'set' ? 'rotate-arrow' : ''} src="https://img.icons8.com/ios-filled/25/000000/expand-arrow--v1.png"/>
+                        </a>
+                    </button>
+                </div>
+                <div className = {dropdownState === 'set' ? 'search-buttons chart-seen' : 'search-buttons chart-hidden'}>
                     <button className='search-tab' onClick={filterSeeAll}>All</button>
                     <button className='search-tab' onClick={filterPedigree}>Pedigree</button>
                     <button className='search-tab' onClick={filterDescendants}>Descendant</button>
                     <button className='search-tab' onClick={filterPDF}>Free PDF</button>
                 </div>
+            </div>
                 {filteredItemsState && filteredItemsState && 
                     <div className = 'category'>
                         
