@@ -124,9 +124,9 @@ export default function Charts() {
             <div className = 'search-dropdown'>
                 <div className='search'>
                     <p>Filter</p>
-                    <button className = 'button' onClick={changeState}>
+                    <button className = 'chart-button' onClick={changeState}>
                         <a>
-                            <img className = {dropdownState === 'set' ? 'rotate-arrow' : ''} src="https://img.icons8.com/ios-filled/25/000000/expand-arrow--v1.png"/>
+                            <img className = {dropdownState === 'set' ? 'rotate-arrow' : ''} src="https://img.icons8.com/ios-filled/10/000000/expand-arrow--v1.png"/>
                         </a>
                     </button>
                 </div>
