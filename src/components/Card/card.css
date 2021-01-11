@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans&display=swap');
+/* font-family: 'Lora', serif;
+font-family: 'Open Sans', sans-serif; */
+
 .card{
     border: 2px solid rgb(201, 199, 199);
     border-radius: 5px 20px 20px 5px;
@@ -12,6 +16,14 @@
     border-right: 2px solid rgb(201, 199, 199);
     width: 20%;
     padding: 1vw;
+}
+
+.card-text-title{
+    font-family: 'Lora', serif;
+}
+
+.card-text{
+    font-family: 'Open Sans', sans-serif; 
 }
 
 .card-content{

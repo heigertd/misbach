@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans&display=swap');
+/* font-family: 'Lora', serif;
+font-family: 'Open Sans', sans-serif; */
+
 .dropdown{
     display: flex;
     justify-content: space-between;
@@ -5,11 +9,16 @@
     background-color: rgb(216, 222, 233);
     padding: 0 2vw;
     width: 95.5vw;
+    box-shadow:2px 2px 5px black inset;
     /* height: 200px; */
-    /* border: 2px solid rgb(62, 98, 121); */
+    /* border: 2px inset rgb(62, 98, 121); */
     /* border-bottom: 2px solid rgb(168, 158, 99); */
     /* border-radius: 0px 0px 20px 20px; */
     /* margin-bottom: 1px; */
+}
+
+.dropdown h3{
+    font-family: 'Lora', serif;
 }
 
 .dropdown-content{
@@ -19,12 +28,12 @@
 }
 
 .button{
-    background-color: rgb(216, 222, 233);
+    background-color: rgba(216, 222, 233, 0);
     border: none;
 }
 
 .button:hover{
-    background-color: rgb(247, 247, 247);
+    background-color: rgba(247, 247, 247, 0.493);
 }
 
 .rotate-arrow{

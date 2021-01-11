@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans&display=swap');
+/* font-family: 'Lora', serif;
+font-family: 'Open Sans', sans-serif; */
+
+
 .homecard-div{
     display: flex;
     height: 85vh;
@@ -32,6 +37,14 @@
     border: 1px solid black;
     /* box-shadow: 10px 10px 10px  rgb(205, 245, 255); */
     box-shadow: 10px 10px 10px  rgba(14, 29, 37, 0.788);
+}
+
+.home-text-text h1{
+    font-family: 'Lora', serif;
+}
+
+.home-text-text h3{
+    font-family: 'Open Sans', sans-serif;
 }
 
 @media only screen and (max-width: 850px) {
