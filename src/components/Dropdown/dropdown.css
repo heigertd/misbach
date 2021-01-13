@@ -2,14 +2,18 @@
 /* font-family: 'Lora', serif;
 font-family: 'Open Sans', sans-serif; */
 
+hr{
+    width: 80%
+}
+
 .dropdown{
     display: flex;
     justify-content: space-between;
-    /* background-color: white; */
-    background-color: rgb(216, 222, 233);
-    padding: 0 2vw;
+    background-color: white;
+    /* background-color: rgb(216, 222, 233); */
+    padding: 2vw;
     width: 95.5vw;
-    box-shadow:2px 2px 5px black inset;
+    /* box-shadow:2px 2px 5px black inset; */
     /* height: 200px; */
     /* border: 2px inset rgb(62, 98, 121); */
     /* border-bottom: 2px solid rgb(168, 158, 99); */
@@ -17,8 +21,24 @@ font-family: 'Open Sans', sans-serif; */
     /* margin-bottom: 1px; */
 }
 
-.dropdown h3{
+.dropdown-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    background-color: white;
+    /* background-color: rgb(216, 222, 233); */
+    padding: 2vw;
+    width: 95.5vw;
+}
+
+.dropdown h1{
     font-family: 'Lora', serif;
+    margin:0;
+}
+
+.dropdown-reverse h1{
+    font-family: 'Lora', serif;
+    margin:0;
 }
 
 .dropdown-content{
@@ -27,9 +47,28 @@ font-family: 'Open Sans', sans-serif; */
     overflow-x: hidden;
 }
 
+.dropdown-text{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    /* justify-content: space-between; */
+    /* margin-bottom: 1vh; */
+    /* width: 40%; */
+}
+
+.dropdown-img-div{
+    align-self: center;
+}
+
+.dropdown-img{
+    height: auto;
+    width: 100%
+}
+
 .button{
     background-color: rgba(216, 222, 233, 0);
     border: none;
+    margin-top: 1vh;
 }
 
 .button:hover{
@@ -47,6 +86,13 @@ font-family: 'Open Sans', sans-serif; */
 .hidden{
     max-height: 0;
     
+}
+
+@media only screen and (max-width: 850px) {
+    .dropdown, .dropdown-reverse{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /* @keyframes seen {

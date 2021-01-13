@@ -6,9 +6,11 @@ import './dropdown.css'
 export default function Dropdown(props) {
     const [dropdownState, setDropdownState] = useState([]);
     const [dropdownContentState, setDropdownContentState] = useState([]);
+    const [reverseState, setReverseState] = useState([]);
 
     useEffect(() => {
         setDropdownContentState(props.content)
+        setReverseState(props.reverse)
     }, [])
 
     function changeState(){
@@ -21,13 +23,21 @@ export default function Dropdown(props) {
 
     return (
         <div id = 'chart'>
-            <div className = 'dropdown'>
-                <h3>{props.title}</h3>
-                <button className = 'button' onClick={changeState}>
-                    <a href = '#chart'>
-                        <img className = {dropdownState === 'set' ? 'rotate-arrow' : ''} src="https://img.icons8.com/ios-filled/25/000000/expand-arrow--v1.png"/>
-                    </a>
-                </button>
+            <div className = {reverseState === 'set' ? 'dropdown-reverse' : 'dropdown'}>
+                <div className = 'dropdown-text'>
+                    <div>
+                        <h1>{props.title}</h1>
+                        <p>{props.text}</p>
+                    </div>
+                    <button className = 'button' onClick={changeState}>
+                        <a href = '#chart'>
+                            <img className = {dropdownState === 'set' ? 'rotate-arrow' : ''} src="https://img.icons8.com/ios-filled/25/000000/expand-arrow--v1.png"/>
+                        </a>
+                    </button>
+                </div>
+                <div className = 'dropdown-img-div'>
+                    <img className = 'dropdown-img' src = {props.img}/>
+                </div>
             </div>
             
             <div className = {dropdownState === 'set' ? 'dropdown-content seen' : 'dropdown-content hidden'}>
@@ -38,6 +48,7 @@ export default function Dropdown(props) {
                     <AboutContact />
                 }
             </div>
+            <hr />
         </div>
 
     )
