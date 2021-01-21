@@ -1,12 +1,12 @@
 import React from 'react'
-import Header from '../../components/Header/Header'
+import Menu from '../../components/Menu/Menu'
 import Grant from '../../images/grantmisbach.jpg'
 import './about-contact.css'
 
 export default function AboutContact() {
     return (
         <div className="about-page">
-            <div className = 'div1'></div>
+            <Menu />
             <div className = 'div2'>
                 <h1 className = 'about-title'>About</h1>
                 <div className='about'>

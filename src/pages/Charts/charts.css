@@ -20,11 +20,6 @@ h1{
     /* flex-direction: row-reverse; */
 }
 
-.div1{
-    /* height: 100vh; */
-    width: 10vw;
-    background-color: rgb(104, 139, 161);
-}
 
 .div2{
     display: flex;
@@ -41,7 +36,7 @@ h1{
     /* align-items: center; */
     /* flex-wrap: wrap; */
     width:95vw;
-    height:100vh;
+    /* height:100vh; */
     /* overflow-y: scroll; */
 }
 

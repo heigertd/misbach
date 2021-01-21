@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import Card from '../../components/Card/Card'
+import Card from '../../components/Card/Card';
+import Menu from '../../components/Menu/Menu';
 import sal from 'sal.js'
 import './charts.css'
 
@@ -120,7 +121,7 @@ export default function Charts() {
 
     return (
         <div className='chart-page'>
-            <div className = 'div1'></div>
+            <Menu />
             <div className = 'div2'>
                 <h1 classname = 'chart-title'>Charts</h1>
 
