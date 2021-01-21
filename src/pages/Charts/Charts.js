@@ -120,34 +120,38 @@ export default function Charts() {
 
     return (
         <div className='chart-page'>
+            <div className = 'div1'></div>
+            <div className = 'div2'>
+                <h1 classname = 'chart-title'>Charts</h1>
 
-            <div className = 'search-dropdown'>
-                <div className='search'>
-                    <p>Filter</p>
-                    <button className = 'chart-button' onClick={changeState}>
-                        <a>
-                            <img className = {dropdownState === 'set' ? 'rotate-arrow' : ''} src="https://img.icons8.com/ios-filled/10/000000/expand-arrow--v1.png"/>
-                        </a>
-                    </button>
-                </div>
-                <div className = {dropdownState === 'set' ? 'search-buttons chart-seen' : 'search-buttons chart-hidden'}>
-                    <button className='search-tab' onClick={filterSeeAll}>All</button>
-                    <button className='search-tab' onClick={filterPedigree}>Pedigree</button>
-                    <button className='search-tab' onClick={filterDescendants}>Descendant</button>
-                    <button className='search-tab' onClick={filterPDF}>Free PDF</button>
-                </div>
-            </div>
-                {filteredItemsState && filteredItemsState && 
-                    <div className = 'category'>
-                        
-                    {filteredItemsState.map(function filter(item, index){
-                        return <Card item={filteredItemsState[index].number} text={filteredItemsState[index].product} image={filteredItemsState[index].image} description = {filteredItemsState[index].description} />
-                    })}
-                        
+                <div className = 'search-dropdown'>
+                    <div className='search'>
+                        <div className = 'rando'>
+                            <p>Filter</p>
+                        </div>
+                        <button className = 'chart-button' onClick={changeState}>
+                            <a>
+                                <img className = {dropdownState === 'set' ? 'rotate-arrow' : ''} src="https://img.icons8.com/metro/15/F5F5F5/chevron-right.png"/>
+                            </a>
+                        </button>
                     </div>
-                }    
-            
-            
+                    <div className = {dropdownState === 'set' ? 'search-buttons chart-seen' : 'search-buttons chart-hidden'}>
+                        <button className='search-tab' onClick={filterSeeAll}>All</button>
+                        <button className='search-tab' onClick={filterPedigree}>Pedigree</button>
+                        <button className='search-tab' onClick={filterDescendants}>Descendant</button>
+                        <button className='search-tab' onClick={filterPDF}>Free PDF</button>
+                    </div>
+                </div>
+                    {filteredItemsState && filteredItemsState && 
+                        <div className = 'category'>
+                            
+                        {filteredItemsState.map(function filter(item, index){
+                            return <Card item={filteredItemsState[index].number} text={filteredItemsState[index].product} image={filteredItemsState[index].image} description = {filteredItemsState[index].description} />
+                        })}
+                            
+                        </div>
+                    }    
+            </div>
             
         </div>
     )

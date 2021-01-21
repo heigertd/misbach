@@ -40,14 +40,14 @@ export default function Dropdown(props) {
                 </div>
             </div>
             
-            <div className = {dropdownState === 'set' ? 'dropdown-content seen' : 'dropdown-content hidden'}>
+            {/* <div className = {dropdownState === 'set' ? 'dropdown-content seen' : 'dropdown-content hidden'}>
                 {dropdownContentState === 'charts' &&
                     <Charts />
                 }
                 {dropdownContentState === 'about' &&
                     <AboutContact />
                 }
-            </div>
+            </div> */}
             <hr />
         </div>
 
