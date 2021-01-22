@@ -67,9 +67,8 @@
 }
 
 @keyframes shrink {
-    from {transform: translateX(0%);}
-    to {transform: translateX(-100%);}
-    /* from {margin-top: 300%;}
-    to {margin-top: 0%;} */
+    0% {transform: translateX(0%);}
+    35% {transform: translateX(0%);}
+    100% {transform: translateX(-100%);}
 }
 
