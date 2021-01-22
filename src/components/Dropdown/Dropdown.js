@@ -22,32 +22,21 @@ export default function Dropdown(props) {
     }
 
     return (
-        <div id = 'chart'>
-            <div className = {reverseState === 'set' ? 'dropdown-reverse' : 'dropdown'}>
-                <div className = 'dropdown-text'>
-                    <div>
-                        <h1>{props.title}</h1>
-                        <p>{props.text}</p>
-                    </div>
-                    <button className = 'button' onClick={changeState}>
-                        <a href = '#chart'>
-                            <img className = {dropdownState === 'set' ? 'rotate-arrow' : ''} src="https://img.icons8.com/ios-filled/25/000000/expand-arrow--v1.png"/>
-                        </a>
-                    </button>
+        <div className = 'dropdown-page'>
+            <div className = 'dropdown'>
+                <div> 
+                    <h3 className = 'dropdown-title'>{props.title}</h3>
                 </div>
-                <div className = 'dropdown-img-div'>
-                    <img className = 'dropdown-img' src = {props.img}/>
+                <div className = {reverseState === 'set' ? 'dropdowntext-reverse' : 'dropdown-text'}>
+                    <div className = 'dropdown-img-div'>
+                        <img className = 'dropdown-img' src = {props.img}/>
+                    </div>
+                    <div className = 'info'>
+                        <p>{props.text}</p>
+                        <a href = {props.href}>View here</a>
+                    </div>
                 </div>
             </div>
-            
-            {/* <div className = {dropdownState === 'set' ? 'dropdown-content seen' : 'dropdown-content hidden'}>
-                {dropdownContentState === 'charts' &&
-                    <Charts />
-                }
-                {dropdownContentState === 'about' &&
-                    <AboutContact />
-                }
-            </div> */}
             <hr />
         </div>
 

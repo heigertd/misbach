@@ -10,6 +10,10 @@ font-family: 'Open Sans', sans-serif; */
     /* border:  2px solid rgb(62, 98, 121); */
 }
 
+.homecard-title{
+    font-size: xx-large;
+}
+
 .home-image{
     background-image: url('../../images/logo.png');
     background-repeat: no-repeat;
