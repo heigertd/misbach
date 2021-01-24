@@ -8,6 +8,7 @@
 .homecard-title{
     font-size: xx-large;
     font-family: var(--sub-title);
+    margin-top: 0;
 }
 
 .home-image{
@@ -25,14 +26,15 @@
     width: 55vw;
 
     /* background-color: rgb(255, 228, 205); */
-    background-color: rgb(62, 98, 121);
+    background-color: var(--main-color);
 }
 
 .home-text-text{
     position: absolute;
     right: 10%;
     width: 50%;
-    padding: 5px;
+    padding: 10px 5px;
+    /* margin: 3vh 0; */
     background-color: white;
     border: 1px solid black;
     /* box-shadow: 10px 10px 10px  rgb(205, 245, 255); */
