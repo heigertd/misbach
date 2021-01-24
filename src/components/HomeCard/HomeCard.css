@@ -1,8 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans&display=swap');
-/* font-family: 'Lora', serif;
-font-family: 'Open Sans', sans-serif; */
-
-
 .homecard-div{
     display: flex;
     height: 85vh;
@@ -12,6 +7,7 @@ font-family: 'Open Sans', sans-serif; */
 
 .homecard-title{
     font-size: xx-large;
+    font-family: var(--sub-title);
 }
 
 .home-image{
@@ -43,13 +39,10 @@ font-family: 'Open Sans', sans-serif; */
     box-shadow: 10px 10px 10px  rgba(14, 29, 37, 0.788);
 }
 
-.home-text-text h1{
-    font-family: 'Lora', serif;
+.home-text-text p{
+    font-family: var(--content-text);
 }
 
-.home-text-text h3{
-    font-family: 'Open Sans', sans-serif;
-}
 
 @media only screen and (max-width: 850px) {
     .homecard-div{

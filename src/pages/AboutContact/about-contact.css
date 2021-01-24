@@ -43,6 +43,15 @@
 
 .grant-text{
     padding-left: 5px;
+    font-family:var(--content-text);
+}
+
+.about-return p{
+    font-family:var(--content-text);
+}
+
+.about-subtitle{
+    font-family: var(--sub-title);
 }
 
 /* p{

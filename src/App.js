@@ -2,7 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from './pages/Home/Home'
 import Charts from './pages/Charts/Charts'
-import AboutContact from './pages/AboutContact/AboutContact'
+import AboutContact from './pages/AboutContact/AboutContact';
+import './css-varibles.css'
 
 function App() {
   return (

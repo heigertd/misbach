@@ -19,12 +19,12 @@ font-family: 'Open Sans', sans-serif; */
 }
 
 .card-text-title{
-    font-family: 'Lora', serif;
+    font-family: var(--sub-title);
     text-align: center;
 }
 
 .card-text{
-    font-family: 'Open Sans', sans-serif; 
+    font-family: var(--content-text); 
 }
 
 .card-content{
@@ -33,7 +33,7 @@ font-family: 'Open Sans', sans-serif; */
     align-self: center;
     width: 80%;
     padding: 0 2vw;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--content-text);
 }
 
 .card-image{
