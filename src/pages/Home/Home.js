@@ -12,7 +12,7 @@ export default function Home() {
     // }, [])
 
     return (
-    <div>
+    <div className = 'home'>
         {/* <div className = 'parallax-wrapper'>
             <div className='arrow'>
                 <img src="https://img.icons8.com/ios-filled/50/000000/expand-arrow--v1.png"/>

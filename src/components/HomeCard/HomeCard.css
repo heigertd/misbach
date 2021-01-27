@@ -1,8 +1,85 @@
+.homecard{
+    margin: 0 0 100px 0;
+}
+
 .homecard-div{
+    background-image: url('../../images/stacked-books.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: 10% 100%; */
+
+    display: flex;
+    justify-content: flex-end;
+    /* text-align: center; */
+    align-items: center;
+
+    height: 75vh;
+}
+
+.homecard-content{
+    width: 100vw;
+    height: 75vh;
+
+    
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: flex-end;
+
+    background: rgba(0, 0, 0, 0.185);
+    color: white;
+    
+}
+
+.img-div{
+    width: 50vw;
+    height: 75vh;
+    background-image: url('../../images/logo.png') ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.text-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    font-family: var(--content-text);
+    /* box-shadow: 10px 10px 10px  rgba(14, 29, 37, 0.788); */
+    box-shadow: 0 1px 2px rgba(0,0,0,0.02), 
+                0 2px 4px rgba(0,0,0,0.02), 
+                0 4px 8px rgba(0,0,0,0.02), 
+                0 8px 16px rgba(0,0,0,0.02),
+                0 16px 32px rgba(0,0,0,0.02), 
+               0 32px 64px rgba(0,0,0,0.05);
+    /* background-color: var(--main-color); */
+    /* color: white; */
+}
+
+.text-div h1{
+    width: 40%;
+}
+
+.text-div p{
+    width: 40%;
+    font-size: large;
+}
+
+.homecard-h1{
+    font-size: 45px;
+    border: none;
+    margin: 0;
+    font-family: var(--title-font);
+    /* background: rgba(0, 0, 0, 0.295); */
+    /* color: white; */
+
+    /* height: 10px; */
+    width: 50vw;
+}
+
+
+/* .homecard-div{
     display: flex;
     height: 85vh;
-
-    /* border:  2px solid rgb(62, 98, 121); */
 }
 
 .homecard-title{
@@ -25,7 +102,6 @@
     align-items: center;
     width: 55vw;
 
-    /* background-color: rgb(255, 228, 205); */
     background-color: var(--main-color);
 }
 
@@ -33,12 +109,12 @@
     position: absolute;
     right: 10%;
     width: 50%;
-    padding: 10px 5px;
-    /* margin: 3vh 0; */
+    padding: 20px 20px;
     background-color: white;
     border: 1px solid black;
-    /* box-shadow: 10px 10px 10px  rgb(205, 245, 255); */
     box-shadow: 10px 10px 10px  rgba(14, 29, 37, 0.788);
+
+
 }
 
 .home-text-text p{
@@ -50,7 +126,6 @@
     .homecard-div{
         display: flex;
         flex-direction: column;
-        /* height: 85vh; */
     }
 
     .home-text-div{
@@ -60,7 +135,6 @@
         width: 100vw;
         height: 100vh;
     
-        /* background-color: rgb(255, 228, 205); */
         background-color: rgb(62, 98, 121);
     }
 
@@ -74,9 +148,6 @@
     }
 
     .home-text-text{
-        /* position: absolute;
-        right: 10%;
-        width: 50%; */
         position: relative;
         text-align: center;
         width: 80%;
@@ -85,8 +156,7 @@
         margin: 1vh;
         background-color: white;
         border: 1px solid black;
-        /* box-shadow: 10px 10px 10px  rgb(205, 245, 255); */
         box-shadow: 10px 10px 10px  rgba(14, 29, 37, 0.788);
     }
     
-}
+} */
