@@ -14,7 +14,7 @@ h1{
 
 .chart-page{
     display: flex;
-    /* background-image: url('../../images/binder.jpg'); */
+    background-image: url('../../images/wbabstract.jpg');
     background-size: cover;
     height: 100vh;
     width: 100vw;
@@ -41,6 +41,7 @@ h1{
     height: 100vh;
     width: 30%;
     padding: 20px;
+
 }
 
 .chart-text h1{

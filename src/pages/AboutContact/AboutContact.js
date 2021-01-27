@@ -7,7 +7,7 @@ export default function AboutContact() {
     return (
         <div className="about-page">
             <Menu />
-            <div className = 'div2'>
+            <div className = 'about-div2'>
                 <h1 className = 'about-title'>About</h1>
                 <div className='about'>
                     <div className='grant'>

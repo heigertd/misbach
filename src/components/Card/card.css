@@ -9,7 +9,7 @@ font-family: 'Open Sans', sans-serif; */
                 0 8px 16px rgba(0,0,0,0.02),
                 0 16px 32px rgba(0,0,0,0.02), 
                0 32px 64px rgba(0,0,0,0.05);
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.747);
     display: flex;
     justify-content: space-between;
     margin-bottom: 5px;
