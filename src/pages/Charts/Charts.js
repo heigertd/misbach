@@ -170,35 +170,39 @@ export default function Charts() {
         <div className='chart-page'>
             <Menu />
             <div className = 'div2'>
-                <h1 classname = 'chart-title'>Charts</h1>
-
-                <div className = 'search-dropdown'>
-                    <div className='search'>
-                        <div className = 'rando'>
-                            <p>Filter</p>
-                        </div>
-                        <button className = 'chart-button' onClick={changeState}>
-                            <a>
-                                <img className = {dropdownState === 'set' ? 'rotate-arrow' : ''} src="https://img.icons8.com/metro/15/F5F5F5/chevron-right.png"/>
-                            </a>
-                        </button>
-                    </div>
-                    <div className = {dropdownState === 'set' ? 'search-buttons chart-seen' : 'search-buttons chart-hidden'}>
-                        <button className='search-tab' onClick={filterSeeAll}>All</button>
-                        <button className='search-tab' onClick={filterPedigree}>Pedigree</button>
-                        <button className='search-tab' onClick={filterDescendants}>Descendant</button>
-                        <button className='search-tab' onClick={filterPDF}>Free PDF</button>
-                    </div>
+                <div className = 'chart-text'>
+                    <h1 classname = 'chart-title'>Charts</h1>
+                    <p>**Our FREE PDF charts are free to download fill out and print on your home computer. You may freely copy and reproduce as many as you want so long as you do NOT alter or change anything on the chart.</p>
                 </div>
-                    {filteredItemsState && filteredItemsState && 
-                        <div className = 'category'>
-                            
-                        {filteredItemsState.map(function filter(item, index){
-                            return <Card item={filteredItemsState[index].number} text={filteredItemsState[index].product} image={filteredItemsState[index].image} description = {filteredItemsState[index].description} price={filteredItemsState[index].price} size={filteredItemsState[index].size} />
-                        })}
-                            
+                <div className = 'chart-content'>
+                    <div className = 'search-dropdown'>
+                        <div className='search'>
+                            <div className = 'rando'>
+                                <p>Filter</p>
+                            </div>
+                            <button className = 'chart-button' onClick={changeState}>
+                                <a>
+                                    <img className = {dropdownState === 'set' ? 'rotate-arrow' : ''} src="https://img.icons8.com/metro/15/F5F5F5/chevron-right.png"/>
+                                </a>
+                            </button>
                         </div>
-                    }    
+                        <div className = {dropdownState === 'set' ? 'search-buttons chart-seen' : 'search-buttons chart-hidden'}>
+                            <button className='search-tab' onClick={filterSeeAll}>All</button>
+                            <button className='search-tab' onClick={filterPedigree}>Pedigree</button>
+                            <button className='search-tab' onClick={filterDescendants}>Descendant</button>
+                            <button className='search-tab' onClick={filterPDF}>Free PDF</button>
+                        </div>
+                    </div>
+                        {filteredItemsState && filteredItemsState && 
+                            <div className = 'category'>
+                                
+                            {filteredItemsState.map(function filter(item, index){
+                                return <Card item={filteredItemsState[index].number} text={filteredItemsState[index].product} image={filteredItemsState[index].image} description = {filteredItemsState[index].description} price={filteredItemsState[index].price} size={filteredItemsState[index].size} />
+                            })}
+                                
+                            </div>
+                        } 
+                </div>       
             </div>
             
         </div>
