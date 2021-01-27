@@ -20,14 +20,14 @@ h1{
 .div2{
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     
 }
 
 .category{
     display:flex;
     flex-direction: column;
-    width:95vw;
+    max-width:75vw;
 }
 
 .search-dropdown{
@@ -43,7 +43,7 @@ h1{
     align-items: center;
     min-width: 100px;
     width: 6vw;
-    height: 6vh;
+    height: 49px;
     background-color: white;
     border-radius: 10px 10px 10px 10px;
     background-color: rgb(191, 213, 226);
