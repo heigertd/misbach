@@ -8,8 +8,8 @@ export default function AboutContact() {
         <div className="about-page">
             <Menu />
             <div className = 'about-div2'>
-                <h1 className = 'about-title'>About</h1>
-                <div className='about'>
+                <div className='about-us'>
+                    <h1>About Us</h1>
                     <div className='grant'>
                         <div className='image'>
                             <img src={Grant} alt='Grant Misbach' />
@@ -23,14 +23,16 @@ export default function AboutContact() {
                             <p>It's our pleasure to provide you world class genealogy charting products. - Thank you and happy researching!</p>
                         </div>
                     </div>
+                </div>
                     <div className = 'about-return'>
                         <h3 className = 'about-subtitle'>Contact Us</h3>
                         <p>Please contact us with any questions or suggestions at info@misbach.org</p>
 
+                    </div>
+                    <div className = 'about-return'>
                         <h3 className = 'about-subtitle'>Refund / Return Policy</h3>
                         <p>If you are dissatisfied for any reason please email us at info@misbach.org requesting a refund. We will refund your order, and give you instructions to return the product. Thanks!</p>
                     </div>
-                </div>
             </div>
         </div>
     )
