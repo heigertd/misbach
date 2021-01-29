@@ -16,6 +16,17 @@ import freeped from '../../images/pdf/free-pedigree-t.gif';
 import freepicture from '../../images/pdf/free-picture-t.gif';
 import freetree from '../../images/pdf/free-tree-t.gif';
 
+import pedigreepdf from '../../pdf/pedigree_chart.pdf'
+import fivegenpdf from '../../pdf/5GenPedigree.pdf'
+import bowtiepdf from '../../pdf/bowtie_chart.pdf'
+import familytreepdf from '../../pdf/family_tree.pdf'
+import familygrouppdf from '../../pdf/FamilyGroupRecord.pdf'
+import fanchartpdf from '../../pdf/fan_chart.pdf'
+import horsepdf from '../../pdf/horse.pdf'
+import kidspdf from '../../pdf/kids4gen.pdf'
+import boxpdf from '../../pdf/box_chart.pdf'
+import picturepdf from '../../pdf/picture_chart.pdf'
+
 import sal from 'sal.js'
 import './charts.css'
 
@@ -67,6 +78,7 @@ export default function Charts() {
             type:'pdf',
             price: 'Free',
             size: '8.5 inches x 11 inches',
+            download: pedigreepdf
         },
         {
             product: '5 Generation Pedigree Chart',
@@ -75,6 +87,7 @@ export default function Charts() {
             type: 'pdf',
             price: 'Free',
             size: '8.5 inches x 11 inches',
+            download: fivegenpdf
         },
         {
             product: 'Picture Pedigree Chart',
@@ -83,6 +96,7 @@ export default function Charts() {
             type: 'pdf',
             price: 'Free',
             size: '8.5 inches x 11 inches',
+            download: picturepdf
         },
         {
             product: 'Bowtie Chart',
@@ -91,6 +105,7 @@ export default function Charts() {
             type:'pdf',
             price: 'Free',
             size: '8.5 inches x 11 inches',
+            download: bowtiepdf
         },
         {
             product: 'Kids Chart',
@@ -99,6 +114,7 @@ export default function Charts() {
             type: 'pdf',
             price: 'Free',
             size: '8.5 inches x 11 inches',
+            download: kidspdf
         },
         {
             product: 'Family Tree Chart',
@@ -107,6 +123,7 @@ export default function Charts() {
             type: 'pdf',
             price: 'Free',
             size: '8.5 inches x 11 inches',
+            download: familytreepdf
         },
         {
             product: "Grandma's Box Chart",
@@ -115,6 +132,7 @@ export default function Charts() {
             type: 'pdf',
             price: 'Free',
             size: '8.5 inches x 11 inches',
+            download: boxpdf
         },
         {
             product: 'Fan Chart (6 generations)',
@@ -123,6 +141,7 @@ export default function Charts() {
             type: 'pdf',
             price: 'Free',
             size: '8.5 inches x 11 inches',
+            download: fanchartpdf
         },
         {
             product: 'Race Horse Thoroughbred Pedigree Chart',
@@ -130,7 +149,8 @@ export default function Charts() {
             image: freehorse,
             type: 'pdf',
             price: 'Free',
-            size: '',
+            size: '8.5 inches x 11 inches',
+            download: horsepdf
         },
         {
             product: 'Family Group Record Sheet',
@@ -138,7 +158,8 @@ export default function Charts() {
             image: freefamily ,
             type: 'pdf',
             price: 'Free',
-            size: '',
+            size: '8.5 inches x 11 inches',
+            download: familygrouppdf
         },
     ])
     const [dropdownState, setDropdownState] = useState([]);
@@ -205,7 +226,7 @@ export default function Charts() {
                             <div className = 'category'>
                                 
                             {filteredItemsState.map(function filter(item, index){
-                                return <Card amazon={filteredItemsState[index].amazon} text={filteredItemsState[index].product} image={filteredItemsState[index].image} description = {filteredItemsState[index].description} price={filteredItemsState[index].price} size={filteredItemsState[index].size}  />
+                                return <Card amazon={filteredItemsState[index].amazon} text={filteredItemsState[index].product} image={filteredItemsState[index].image} description = {filteredItemsState[index].description} price={filteredItemsState[index].price} size={filteredItemsState[index].size} download = {filteredItemsState[index].download} />
                             })}
                                 
                             </div>

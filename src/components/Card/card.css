@@ -43,6 +43,16 @@ font-family: 'Open Sans', sans-serif; */
     font-family: var(--content-text);
 }
 
+.card-content button{
+    padding: 15px;
+    margin-top: 40px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: var(--content-text);
+}
+
 .card-image{
     max-width: 100%;
     height: auto;

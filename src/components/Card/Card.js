@@ -1,5 +1,6 @@
 import React from 'react'
 import './card.css'
+import pdf from '../../pdf/pedigree_chart.pdf'
 
 export default function Card(props) {
 
@@ -14,7 +15,13 @@ export default function Card(props) {
                 <p>Size: {props.size}</p><br/>
                 <p className='card-text'>{props.description}</p>
                 <h4>{props.price}</h4>
-                <a href ={props.amazon ? props.amazon : 'google.com'}><p>{props.amazon ? 'Purchase Here' : 'Download Here'}</p></a>
+                {props.amazon && 
+                    <a target = '_blank' href = {props.amazon}><button>Purchase Here</button></a>
+                }
+                {props.download &&
+                    <a target = '_blank' href = {props.download}><button>Download Here</button></a>
+                }
+                {/* <a href ={props.amazon ? props.amazon : 'google.com'}><p>{props.amazon ? 'Purchase Here' : 'Download Here'}</p></a> */}
             </div>
         </div>
     )
