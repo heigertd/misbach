@@ -1,5 +1,6 @@
 .about-page{
     /* background-color: maroon; */
+    
     display: flex;
     width:100vw;
     /* height: 100vh; */
@@ -9,6 +10,7 @@
 .about-div2{
     display: flex;
     flex-direction: column ;
+    padding: 20px 20px;
     /* align-items: center; */
 }
 
@@ -54,6 +56,7 @@
 .about-return{
     display: flex;
     justify-content: space-between;
+    
     /* flex-direction:column; */
     /* align-items: center; */
     /* margin-left:15vw;
@@ -78,6 +81,7 @@
 
 .about-subtitle{
     font-family: var(--sub-title);
+    margin: 0;
     width: 40%;
 }
 
