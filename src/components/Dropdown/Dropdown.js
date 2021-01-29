@@ -31,7 +31,7 @@ export default function Dropdown(props) {
                     <div className = 'info'>
                         <p className = 'dropdown-title'>{props.title}</p>
                         <p>{props.text}</p>
-                        <a href = {props.href}><button >View Here</button></a>
+                        <a href = {props.href}><button>View Here</button></a>
                     </div>
                 </div>
             </div>

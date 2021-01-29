@@ -1,6 +1,5 @@
 import React from 'react'
 import './card.css'
-import genFold from '../../images/15genfold.jpg'
 
 export default function Card(props) {
 
@@ -15,6 +14,7 @@ export default function Card(props) {
                 <p>Size: {props.size}</p><br/>
                 <p className='card-text'>{props.description}</p>
                 <h4>{props.price}</h4>
+                <a href ={props.amazon ? props.amazon : 'google.com'}><p>{props.amazon ? 'Purchase Here' : 'Download Here'}</p></a>
             </div>
         </div>
     )
