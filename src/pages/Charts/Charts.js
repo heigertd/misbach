@@ -30,8 +30,6 @@ import picturepdf from '../../pdf/picture_chart.pdf'
 import sal from 'sal.js'
 import './charts.css'
 
-//TODO: get right images, amazon links
-
 export default function Charts() {
     const [filteredItemsState, setFilteredItems] = useState([]);
     const [itemState, setItemState] = useState([

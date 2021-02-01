@@ -4,24 +4,12 @@ p{
 
 .chart-page{
     display: flex;
-    /* background-image: url('../../images/wbabstract.jpg'); */
-    /* background-size: cover; */
-    /* height: 100vh; */
-    /* width: 100vw; */
-
-    /* overflow-y: hidden; */
 }
 
 
 .div2{
-    /* display: flex; */
-    /* text-align: center; */
-    /* flex-direction: row-reverse; */
     width: 100vw;
     align-items: center;
-    
-    /* flex-direction: column; */
-    /* align-items: flex-end; */
     
 }
 
@@ -32,7 +20,6 @@ p{
     align-content: center;
     width: 100%;
     text-align: center;
-    /* background-color: rgb(24, 61, 82); */
     color:white;
     box-shadow: 0 1px 2px rgba(0,0,0,0.02), 
                 0 2px 4px rgba(0,0,0,0.02), 
@@ -47,14 +34,10 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* height: 100vh; */
-    /* width: 30%; */
-    /* padding: 20px; */
 
 }
 
 .chart-text h7{
-    /* width: 30%; */
     margin: 0;
     font-size: 7vw;
     font-family: var(--title-font);
@@ -85,9 +68,6 @@ p{
  display: flex;
  width: 100%;
  position: sticky;
- /* padding-top: 20px; */
- /* align-items: flex-end; */
- 
 }
 
 .search{
@@ -97,13 +77,9 @@ p{
     min-width: 100px;
     width: 6vw;
     height: 50px;
-    /* border-radius: 10px 0px 0px 10px; */
     background-color: rgba(189, 210, 223, 0.082);
     color: black;
-    /* border: 1px solid black; */
     font-family: var(--content-text);
-    /* box-shadow: 0px 0px 10px rgba(179, 178, 178, 0.705); */
-    /* margin-bottom: 15px; */
     text-align: center;
     
 }
@@ -111,19 +87,14 @@ p{
 .search-buttons{
     display: flex;
     justify-content: space-around;
-    /* border-radius: 0px 10px 10px 0px; */
-
-    /* background-color: rgb(191, 213, 226); */
     width: 100%;
     height: 50px;
     overflow: hidden;
-    /* box-shadow: 0px 1px 10px rgba(128, 128, 128, 0.637) */
 }
 
 
 .search-tab{
     border: none;
-    /* background-color:white; */
     background-color: rgba(189, 210, 223, 0.082);
     font-family: var(--content-text);
     font-size: 16px;
@@ -141,19 +112,18 @@ button:hover{
     .chart-page{
         display: flex;
         flex-direction: column;
-        align-items: start;
     }
 
     .category{
-        display:flex;
+        /* display:flex;
         flex-direction: column;
         align-items: center;
         width:99vw;
-        height:100vh;
+        height:100vh; */
     }
     
     .search{
-        display: flex;
+        /* display: flex;
         justify-content: space-between;
         margin-top: 1vh;
         margin-bottom: 1vh;
@@ -167,7 +137,7 @@ button:hover{
         
         border-radius: 0px 10px 10px 0px;
         background-color: rgb(132, 165, 185);
-        border: 1px solid black;
+        border: 1px solid black; */
 
 
     }
