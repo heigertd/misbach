@@ -43,6 +43,10 @@ font-family: 'Open Sans', sans-serif; */
     font-family: var(--content-text);
 }
 
+.card-content h4{
+    margin-bottom: 0;
+}
+
 .card-content button{
     padding: 15px;
     margin-top: 40px;

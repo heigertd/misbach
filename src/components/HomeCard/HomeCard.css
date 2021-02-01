@@ -60,41 +60,30 @@
 }
 
 
-/* @media only screen and (max-width: 850px) {
-    .homecard-div{
+@media only screen and (max-width: 850px) {
+    .text-div{
         display: flex;
         flex-direction: column;
+        padding: 20px 0px;
     }
 
-    .home-text-div{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-        height: 100vh;
+    .text-div h7{
+        width: 90%;
+        padding-bottom: 20px;
+    }
     
-        background-color: rgb(62, 98, 121);
+    .text-div p{
+        width: 90%;
+        font-size: large;
+        /* padding-bottom: 20px; */
     }
 
-    .home-image{
-        background-image: url('../../images/logo.png');
+    .img-div{
+        width: 80vw;
+        height: 85vh;
+        background-image: url('../../images/logo.png') ;
         background-repeat: no-repeat;
         background-position: center;
-    
-        width: 100vw;
-        height: 100vh;
-    }
-
-    .home-text-text{
-        position: relative;
-        text-align: center;
-        width: 80%;
-        right: 0;
-        padding: 5px;
-        margin: 1vh;
-        background-color: white;
-        border: 1px solid black;
-        box-shadow: 10px 10px 10px  rgba(14, 29, 37, 0.788);
     }
     
-} */
+}
