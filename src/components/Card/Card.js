@@ -1,6 +1,6 @@
 import React from 'react'
 import './card.css'
-import pdf from '../../pdf/pedigree_chart.pdf'
+
 
 export default function Card(props) {
 
@@ -21,7 +21,6 @@ export default function Card(props) {
                 {props.download &&
                     <a target = '_blank' href = {props.download}><button>Download Here</button></a>
                 }
-                {/* <a href ={props.amazon ? props.amazon : 'google.com'}><p>{props.amazon ? 'Purchase Here' : 'Download Here'}</p></a> */}
             </div>
         </div>
     )

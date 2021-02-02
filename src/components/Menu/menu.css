@@ -1,12 +1,9 @@
 .menu-main{
     width: 6vw;
     background-color: var(--main-color);
-    
     position: sticky;
     top: 0;
-
-    height: 100vh;
-    
+    height: 100vh;  
 }
 
 .menu-list{
@@ -17,9 +14,7 @@
     font-size: large;
     height: 50%;
     padding: 0 5px;
-
     transform: translateX(-100%)
-    
 }
 
 .menu-item{
@@ -69,14 +64,10 @@
         width: 100vw;
         background-color: var(--main-color);
         padding: 5px 0px;
-        
         position: sticky;
         top: 0;
-    
         height: 10vh;
-
-        z-index: 100;
-        
+        z-index: 100; 
     }
     
     .menu-list{
@@ -87,9 +78,7 @@
         font-size: large;
         height: 90%;
         padding: 5px 0px;
-    
-        transform: translateX(-100%)
-        
+        transform: translateX(-100%)  
     }
   }
 

@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+
 import Card from '../../components/Card/Card';
 import Menu from '../../components/Menu/Menu';
 import ninegen from '../../images/pedigree/9genfanframe.jpg';
@@ -27,7 +28,6 @@ import kidspdf from '../../pdf/kids4gen.pdf'
 import boxpdf from '../../pdf/box_chart.pdf'
 import picturepdf from '../../pdf/picture_chart.pdf'
 
-import sal from 'sal.js'
 import './charts.css'
 
 export default function Charts() {
@@ -161,28 +161,11 @@ export default function Charts() {
         },
     ])
     const [dropdownState, setDropdownState] = useState([]);
-    
-
-    
-    useEffect(() => {
-        sal({
-            threshold: .25,
-            once: false,
-        
-        });
-    }, [])
 
     useEffect(()=>{
         setFilteredItems(itemState);
     },[])
-
-    function changeState(){
-        if(dropdownState === 'set'){
-            setDropdownState('')
-        }else{
-            setDropdownState('set')
-        }
-    }
+  
     
     function filterPedigree(){
         const copyOfItems = [...itemState];
