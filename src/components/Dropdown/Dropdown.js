@@ -13,7 +13,7 @@ export default function Dropdown(props) {
             <div className = 'dropdown'>
                 <div className = {reverseState === 'set' ? 'dropdowntext-reverse' : 'dropdown-text'}>
                     <div className = 'dropdown-img-div'>
-                        <img className = 'dropdown-img' src = {props.img}/>
+                        <img alt = 'image' className = 'dropdown-img' src = {props.img}/>
                     </div>
                     <div className = 'info'>
                         <p className = 'dropdown-title'>{props.title}</p>
