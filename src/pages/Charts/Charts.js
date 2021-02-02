@@ -160,7 +160,6 @@ export default function Charts() {
             download: familygrouppdf
         },
     ])
-    const [dropdownState, setDropdownState] = useState([]);
 
     useEffect(()=>{
         setFilteredItems(itemState);
