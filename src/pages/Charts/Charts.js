@@ -32,7 +32,7 @@ import './charts.css'
 
 export default function Charts() {
     const [filteredItemsState, setFilteredItems] = useState([]);
-    const [itemState, setItemState] = useState([
+    const [itemState] = useState([
         {
             product: 'Nine Generation Fan Chart',
             description: 'You can not go wrong with this chart. We guarantee you will not be disappointed in the quality or the price. Printed on high-quality parchment paper, displays up to 511 names in a unique and attractive design. The eight closest paternal lines are shaded for reference and convenience in identifying your progress. Elegant enough for display or gift giving, and priced low enough to use as a research aid for yourself.',
@@ -163,7 +163,7 @@ export default function Charts() {
 
     useEffect(()=>{
         setFilteredItems(itemState);
-    },[])
+    }, [])
   
     
     function filterPedigree(){

@@ -16,10 +16,10 @@ export default function Card(props) {
                 <p className='card-text'>{props.description}</p>
                 <h4>{props.price}</h4>
                 {props.amazon && 
-                    <a target = '_blank' href = {props.amazon}><button>Purchase Here</button></a>
+                    <a target = '_blank' rel="noopener noreferrer" href = {props.amazon}><button>Purchase Here</button></a>
                 }
                 {props.download &&
-                    <a target = '_blank' href = {props.download}><button>Download Here</button></a>
+                    <a target = '_blank' rel="noopener noreferrer" href = {props.download}><button>Download Here</button></a>
                 }
             </div>
         </div>
