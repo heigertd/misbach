@@ -1,100 +1,162 @@
-.chart-page{
-    background-color: maroon;
-    height:100vh;
-    /* overflow-y: hidden; */
+p{
+    margin: 0;
 }
 
-.chart{
+.chart-page{
     display: flex;
-    flex-direction:column;
+}
+
+
+.div2{
+    width: 100vw;
     align-items: center;
-    margin-left:15vw;
-    margin-right:15vw;
-    background-color: white;
-    padding-left: 1vw;
-    padding-right: 1vw;
-    box-shadow: 5px 10px 5px #000000;
-    height: 86vh;
-    /* overflow-y: hidden; */
+    
+}
+
+.upper-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    text-align: center;
+    color:white;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.02), 
+                0 2px 4px rgba(0,0,0,0.02), 
+                0 4px 8px rgba(0,0,0,0.02), 
+                0 8px 16px rgba(0,0,0,0.02),
+                0 16px 32px rgba(0,0,0,0.02), 
+               0 32px 64px rgba(0,0,0,0.05);
+}
+
+.chart-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.chart-text h7{
+    margin: 0;
+    font-size: 7vw;
+    font-family: var(--title-font);
+}
+
+.chart-text p{
+    font-size: small;
+    font-family: var(--content-text);
+}
+
+.disclaimer{
+    width: 50%;
+}
+
+.chart-content{
+    padding-top: 40px;
+    width: 100%;
 }
 
 .category{
     display:flex;
-    justify-content: center;
     flex-wrap: wrap;
-    width:100%;
-    height:100vh;
-    overflow-y: scroll;
+    justify-content: space-evenly;
+    max-width:90vw;
+}
+
+.search-dropdown{
+    display: flex;
+    width: 100%;
+ 
 }
 
 .search{
     display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: space-evenly;
-    width:100%;
-    /* border: 1px solid rgb(202, 200, 200); */
-    margin-bottom: 1vh;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px;
+    width: 6vw;
+    height: 50px;
+    background-color: var(--filter-by-color);
+    color: black;
+    font-family: var(--content-text);
+    text-align: center;
+    
 }
 
+.search-buttons{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+}
+
+
 .search-tab{
-    border: 1px solid white;
-    border-radius: 100%;
-    background-color:white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: none;
+    background-color: var(--filter-by-color);
+    font-family: var(--content-text);
     font-size: 16px;
+    min-width: 25%;
+    height: 100%;
 }
 
 button:hover{
-    background: rgb(221, 220, 220);
+    background-color: var(--main-color);
+    color: white;
 }
 
-.popup{
-    height: 100vh;
-    width: 99vw;
-    display: flex;
-    flex-direction: column-reverse;
-    position: fixed;
-    bottom: 0;
-    right:0;
-    background: rgba(133, 19, 19, 0);
-    align-items: center;
-    justify-content: center;
-}
 
-.popup-card{
-    display: flex;
-    flex-direction: column;
-    background: white;
-    align-items: center;
-    box-shadow: 5px 10px 5px #888888;
-    border: 1px solid black;
-    margin-bottom: 3%;
-    padding:2%;
-}
-.popup-pic{
-    width:50%;
-    height:auto;
-}
+@media only screen and (max-width: 850px) {
+    .chart-page{
+        display: flex;
+        flex-direction: column;
+    }
 
-/* width */
-::-webkit-scrollbar {
-    width: 5px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
+    .chart-content{
+        padding-top: 40px;
+        width: 100%;
+    }
 
-  @import '../../../node_modules/sal.js/dist/sal.css';
+    .category{
+        margin: 0;
+        max-width: 100vw;
+    }
+
+    .search{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        min-width: 100px;
+        width: 6vw;
+        height: 50px;
+        background-color: var(--filter-by-color);
+        color: black;
+        font-family: var(--content-text);
+        text-align: center;
+        
+    }
+    
+    .search-buttons{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: unset;
+        width: 100%;
+        height: 50px;
+        overflow: visible;
+        padding-bottom: 20px;
+    }
+    
+    
+    .search-tab{
+        border: none;
+        background-color: var(--filter-by-color);
+        font-family: var(--content-text);
+        font-size: 16px;
+        min-width: 50%;
+    }
+
+
+  }

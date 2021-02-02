@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans&display=swap');
+:root{
+    --title-font: 'Crimson Pro', serif;
+    --sub-title: 'Lora', serif;
+    --content-text: 'Open Sans', sans-serif;
+    --main-color: rgb(78, 177, 238);
+    --filter-by-color: rgba(189, 210, 223, 0.082);
+}

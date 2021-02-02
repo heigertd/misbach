@@ -1,20 +1,26 @@
 import React from 'react'
 import './card.css'
-import genFold from '../../images/15genfold.jpg'
+
 
 export default function Card(props) {
 
-    function clickedMoreInfoReturn(){
-        var chosenInfo = 'clicked'
-        props.clickedMoreInfo(chosenInfo)
-    }
 
     return (
-        <div className='big-card'>
-            <div className = 'card'>
+        <div className = 'card'>
+            <div className = 'card-title'>
+                <h3 className='card-text-title'>{props.text}</h3>
                 <img className='card-image' src={props.image} alt= 'nine generation fan frame chart'/>
-                <p className='card-text'>{props.text}</p>
-                <button onClick={clickedMoreInfoReturn}>More Info</button>
+            </div>
+            <div className = 'card-content'>
+                <p>Size: {props.size}</p><br/>
+                <p className='card-text'>{props.description}</p>
+                <h4>{props.price}</h4>
+                {props.amazon && 
+                    <a target = '_blank' href = {props.amazon}><button>Purchase Here</button></a>
+                }
+                {props.download &&
+                    <a target = '_blank' href = {props.download}><button>Download Here</button></a>
+                }
             </div>
         </div>
     )
