@@ -163,7 +163,7 @@ export default function Charts() {
 
     useEffect(()=>{
         setFilteredItems(itemState);
-    }, [])
+    }, [itemState])
   
     
     function filterPedigree(){
